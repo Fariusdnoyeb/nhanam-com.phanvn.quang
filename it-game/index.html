@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>2018 Nha Nam - Game Demo</title>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/howler.min.js"></script>	
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/nhanam.css">
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+	<h1 class="myfont">Safe and Sound</h1>
+	
+	<div class="container" id="succeeded">
+		<h2>The safe opens. You have demonstrated a sound knowledge!</h2>
+		<img class="safe-img" src="assets/images/open-safe.png" alt="open safe">
+	</div>
+	
+	<div id="content">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-6 align-self-center center">
+					<img class="img-fluid safe" src="assets/images/close-safe.png"
+						alt="close safe">
+				</div>
+				
+				<div class="w-100 d-sm-none d-block"></div>
+				
+				<div class="col-6 align-self-center center">
+					<img class="img-fluid safe" src="assets/images/dial.png"
+						alt="close safe">
+					<hr>
+<!-- 					<form action="" method="POST"> -->
+						<input type="text" id="input"
+							name="password" placeholder="password"></input>
+						<button id="submitBtn" type="submit" class="btn btn-danger">Submit!</button>
+<!-- 					</form> -->
+				</div>
+				
+			</div>
+			
+			<div id="failed">
+				<p>"The world is full of obvious things which nobody by any chance ever observes."</p>
+				<p>Sherlock Holmes - The Hound of the Baskervilles</p>
+			</div>
+			
+		</div>
+	
+		<hr class="my-3">
+		
+		<div>
+			<div class="row">
+				<div class="col-1 align-self-center d-none d-sm-block">
+					<p class="mb-md-5 mb-sm-3 pb-lg-4 center"><button class ="btn btn-dark" id="soloBtn"><i class="fas fa-music"></i> 1</button></p>
+					<p class="mt-md-5 mb-sm-3 pt-lg-4 center"><button class ="btn btn-dark" id="rhythmBtn"><i class="fas fa-music"></i> 2</button></p>
+				</div>
+				
+				<div class="w-100 d-md-none d-block"></div>
+				
+				<div class="col-11 align-self-center">
+					<img class="img-fluid music-img" src="assets/sherlock-sheets/sherlock-decoded_001-inline.png" alt="sherlock inline">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 align-self-center center">
+					<button class="btn btn-success" id="originalBtn"><i class="fas fa-play"></i> Adjust & Play</button>
+				</div>
+				
+				<div class="w-100 d-sm-none d-block"></div>
+				
+				<div class="col-6 align-self-center center">
+					<a class="btn btn-info" href="assets/sherlock-sheets/notes.pdf"><span><i class="fas fa-book-open"></i> See Full Sheet</span></a>
+				</div>
+			</div>
+		</div>
+	
+
+		<hr>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-4 center align-self-center">
+					<img class="img-fluid key-img" src="assets/images/key.png" alt="key">
+				</div>
+				
+				<div class="w-100 d-sm-none d-block"></div>
+				
+				<div class="col-8 align-self-center">
+					<pre>
+						<code>
+text = empty;
+LONG = 1;
+SHORT = 0;
+
+function key(notes) {
+
+    for each (note in notes) {
+   
+       if (note is long)
+           text.append(SHORT);
+       else if (note is short)
+           text.append(LONG);
+       else if (note is silent)
+           text = text;
+         
+    }
+	
+	return text;
+	
+}
+						</code>
+					</pre>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<h2 class="myfont">Image Credits:</h2>
+		<p><a href="https://all-free-download.com/free-vectors/">Free vectors</a></p>
+		<p><a href="https://www.freepik.com/free-photos-vectors/music">Music vector created by Microvector - Freepik.com</a></p>
+		
+	<script src="assets/js/nhanam.js"></script>
+	
+</body>
+
+</html>
