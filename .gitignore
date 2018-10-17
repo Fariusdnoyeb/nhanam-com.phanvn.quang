@@ -1,2 +1,6 @@
 .project
-no-upload/
+.settings/
+
+gitignore/
+
+/it-game\assets\jsmain.js

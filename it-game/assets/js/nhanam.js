@@ -1,5 +1,3 @@
-//import {Howl, Howler} from 'howler';
-
 function add(btn) {
 	btn.addClass("active");
 }
