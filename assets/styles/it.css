@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+
+@font-face {
+	font-family: "QuangPhan";
+	src: url("../fonts/PhanQuangCalligraphr-Regular.otf");
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+	color: white;
+	background: #FBD3E9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#open-safe {
+	max-width: 500px;
+}
+
+#close-safe {
+	min-width: 200px;
+	max-width: 250px;
+}
+
+#dial {
+	width: 200px;
+}
+
+#key {
+	min-width: 150px;
+}
+
+.myfont {
+	font-family: QuangPhan;
+}
+
+.center {
+	text-align: center;
+	align-content: center;
+}
+
+pre code {
+	font-family: QuangPhan;
+	font-size: 30px;
+	color: white;
+}
+
+#succeeded {
+	padding: 0;
+	margin: 0;
+	font-family: QuangPhan;
+	display: none;
+	text-align: center;
+}
+
+#failed {
+	display: none;
+	font-family: QuangPhan;
+	font-size: 25px;
+	text-align: center;
+}

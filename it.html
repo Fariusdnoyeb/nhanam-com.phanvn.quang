@@ -5,20 +5,19 @@
 
 <meta charset="ISO-8859-1">
 
-<title>2018 Nha Nam - Game Demo</title>
+<title>Safe & Sound</title>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/scripts/lib/jquery-3.3.1.min.js"></script>
 
-<script src="assets/js/howler.min.js"></script>	
+<script src="assets/scripts/lib/howler.min.js"></script>	
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/nhanam.css">
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/styles/it.css">
 
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
-
 
 </head>
 
@@ -28,7 +27,7 @@
 	
 	<div class="container" id="succeeded">
 		<h2>The safe opens. You have demonstrated a sound knowledge!</h2>
-		<img class="safe-img" src="assets/images/open-safe.png" alt="open safe">
+		<img id="open-safe" src="assets/resources/it/images/open-safe.png" alt="open safe">
 	</div>
 	
 	<div id="content">
@@ -36,14 +35,14 @@
 			<div class="row">
 			
 				<div class="col-6 align-self-center center">
-					<img class="img-fluid safe" src="assets/images/close-safe.png"
+					<img id="close-safe" src="assets/resources/it/images/close-safe.png"
 						alt="close safe">
 				</div>
 				
 				<div class="w-100 d-sm-none d-block"></div>
 				
 				<div class="col-6 align-self-center center">
-					<img class="img-fluid safe" src="assets/images/dial.png"
+					<img id="dial" src="assets/resources/it/images/dial.png"
 						alt="close safe">
 					<hr>
 <!-- 					<form action="" method="POST"> -->
@@ -73,8 +72,8 @@
 				
 				<div class="w-100 d-md-none d-block"></div>
 				
-				<div class="col-11 align-self-center">
-					<img class="img-fluid music-img" src="assets/sherlock-sheets/sherlock-decoded_001-inline.png" alt="sherlock inline">
+				<div class="col-11 pr-4 align-self-center">
+					<img class="img-fluid music-img" src="assets/resources/it/images/sherlock-decoded_001-inline.png" alt="sherlock inline">
 				</div>
 			</div>
 			
@@ -86,7 +85,7 @@
 				<div class="w-100 d-sm-none d-block"></div>
 				
 				<div class="col-6 align-self-center center">
-					<a class="btn btn-info" href="assets/sherlock-sheets/notes.pdf"><span><i class="fas fa-book-open"></i> See Full Sheet</span></a>
+					<a class="btn btn-info" href="assets/resources/it/notes.pdf"><span><i class="fas fa-book-open"></i> See Full Sheet</span></a>
 				</div>
 			</div>
 		</div>
@@ -97,7 +96,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-4 center align-self-center">
-					<img class="img-fluid key-img" src="assets/images/key.png" alt="key">
+					<img class="img-fluid" id="key" src="assets/resources/it/images/key.png" alt="key">
 				</div>
 				
 				<div class="w-100 d-sm-none d-block"></div>
@@ -114,9 +113,9 @@ function key(notes) {
     for each (note in notes) {
    
        if (note is long)
-           text.append(SHORT);
-       else if (note is short)
            text.append(LONG);
+       else if (note is short)
+           text.append(SHORT);
        else if (note is silent)
            text = text;
          
@@ -139,7 +138,7 @@ function key(notes) {
 		<p><a href="https://all-free-download.com/free-vectors/">Free vectors</a></p>
 		<p><a href="https://www.freepik.com/free-photos-vectors/music">Music vector created by Microvector - Freepik.com</a></p>
 		
-	<script src="assets/js/nhanam.js"></script>
+	<script src="assets/scripts/it.min.js"></script>
 	
 </body>
 
